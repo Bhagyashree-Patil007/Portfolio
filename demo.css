@@ -1,0 +1,305 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #f5f5f5; /* Light text */
+}
+
+#btn {
+    gap: 60px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 3px;
+    border: 1px solid #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+#btn:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+    background-color: #222;
+}
+
+.about-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+.about-section:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+    background-color: #222;
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.about-text h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.contact-info {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+#header {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+#header h1 {
+    margin-bottom: 5px;
+}
+#header div button {
+    padding: 8px 16px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 15%;
+}
+
+a i {
+    font-size: 30px;
+    color: #0077b5;
+    transition: 0.3s;
+}
+a i:hover {
+    color: #00aaff;
+}
+
+.social-icons-container {
+    display: flex;
+    gap: 15px;
+}
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: #1e1e1e;
+    border-radius: 2px;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+.social-icon i {
+    font-size: 14px;
+}
+.social-icon:hover {
+    transform: scale(1.1);
+    background-color: #333;
+}
+.social-icon:nth-child(1) {
+    border-radius: 50%;
+}
+
+.skills-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Skills card */
+.skills-card {
+  flex: 1;
+  min-width: 280px;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.skills-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+  background-color: #222;
+}
+
+.skills-card h4 {
+  color: #f5f5f5;
+  margin-bottom: 12px;
+  /* text-align: center; */
+}
+
+/* Icon container - now forces one row */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: nowrap; /* ❌ no wrapping */
+  overflow-x: auto;  /* scrolls on small screens */
+}
+
+/* Icon box - made smaller */
+.icon-box {
+  width: 85px;
+  height: 85px;
+  border: 1px solid #333;
+  border-radius: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background: #1e1e1e;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  flex-shrink: 0; /* prevent shrinking in flex */
+}
+
+.icon-box:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+  background-color: #222;
+}
+
+.icon-box i,
+.icon-box img {
+  font-size: 26px;
+  max-width: 35px;
+  max-height: 35px;
+}
+
+.icon-box p {
+  font-size: 12px;
+  margin: 0;
+  color: #f5f5f5;
+}
+
+/* Icon colors */
+.fa-python { color: #3776AB; }
+.fa-html5 { color: #E34F26; }
+.fa-css3-alt { color: #1572B6; }
+.fa-js { color: #F7DF1E; }
+.fa-git-alt { color: #F1502F; }
+.fa-github { color: #fff; }
+
+
+.project-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+    background-color: #222;
+}
+.project-body {
+    max-height: none;
+    overflow: visible;
+}
+
+/* Achievements & Skills section (bullet format, not buttons) */
+.achievements-container,
+.Skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+/* Achievements & Skills section (with hover animation like about & project boxes) */
+.achievements-list, .skills-list {
+    flex: 1;
+    min-width: 300px;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+.achievements-list:hover, .skills-list:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+    background-color: #222;
+}
+.achievements-list h4, .skills-list h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #f5f5f5;
+    font-size: 22px;
+}
+.achievements-list ul, .skills-list ul {
+    padding-left: 20px;
+    margin: 0;
+}
+.achievements-list ul li, .skills-list ul li {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+@media (max-width: 992px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    .about-text h1 {
+        font-size: 22px;
+    }
+}
+@media (max-width: 768px) {
+    .achievements-container,
+    .Skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon-container {
+        gap: 15px;
+    }
+    .icon-box {
+        width: 100px;
+        height: 100px;
+    }
+    .icon-box i {
+        font-size: 30px;
+    }
+}
+@media (max-width: 576px) {
+    #header h1 {
+        font-size: 20px;
+    }
+    #header div button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    .about-text h1 {
+        font-size: 18px;
+    }
+    .achievements-list, .skills-list {
+        padding: 15px;
+    }
+    .achievements-list h4, .skills-list h4 {
+        font-size: 18px;
+    }
+}
